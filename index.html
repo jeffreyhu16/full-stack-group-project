@@ -30,55 +30,31 @@
           /* resize: none; */
           height: 100px;
         }
-          .navbar {
-            background-color: #c9879b;
-          }
+        .navbar {
+          background-color: #E6A3B0;
+        }
 
-          .dropdown-menu{
-              background-color: #c9879b;
-          }
+        .navbar .navbar-brand{
+          color:#fff;
+        }
 
-          .dropdown-item{
-              color: #f7e8f0;
-          }
+        .navbar .navbar-brand:hover {
+          color: #9462a9;
+        }
 
-          .dropdown-item:hover{
-              background-color: #c9879b;
-              color:#9462a9;
-          }
+        .navbar_icon{
+          display: flex;
+          flex-direction: row;
+        }
 
-          .navbar .navbar-brand{
-              color:#f7e8f0;
-          }
+        .d-flex a{
+          color: #fff;
+          margin: 10px;
+        }
 
-          .navbar .navbar-brand:hover {
-            color: #9462a9;
-          }
-
-          .navbar .navbar-nav .nav-link {
-            color: #9462a9;
-            border-radius: .25rem;
-            margin: 0 0.25em;
-          }
-          .navbar .navbar-nav .nav-link:not(.disabled):hover {
-            color: #f4ebf0;
-          }
-
-          .navbar_icon{
-                  display: flex;
-                  flex-direction: row;
-                  
-              }
-
-          .d-flex a{
-              text-decoration: none;
-              color: #f4ebf0;
-              margin: 10px;
-          }
-
-          .d-flex a:hover{
-              color:#9462a9;
-          }
+        .d-flex a:hover{
+          color:#9462a9;
+        }
 
 
     </style>
@@ -87,46 +63,20 @@
   <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled"></a>
-              </li>
-            </ul>
-            <form class="d-flex">
-                <div class="navbar_icon">
-                        
-                    <div><a href=""><i class="fas fa-user fa-lg"></i></a></div>
-                    <div><a href=""><i class="fad fa-comments fa-lg"></i></a></div>
-                    <div><a href=""><i class="fas fa-search fa-lg"></i></a></div>
-                
-            </div>
-            </form>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+          <form class="d-flex">
+              <div class="navbar_icon">
+                      
+                  <div><a href=""><i class="fas fa-user fa-lg"></i></a></div>
+                  <div><a href=""><i class="fad fa-comments fa-lg"></i></a></div>
+                  <div><a href=""><i class="fas fa-search fa-lg"></i></a></div>
+              
           </div>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
 
       <!-- 留言區 -->
       
