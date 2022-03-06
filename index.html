@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -7,149 +8,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-
-    <style>
-        body{
-            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-        }
-        h2{
-          font-weight: bold;
-          
-        }
-
-        .review{
-            width: 500px;
-            height: 400px;
-        }
-        .form-control{
-          /* resize: none; */
-          height: 100px;
-        }
-        .navbar {
-          background-color: #E6A3B0;
-        }
-
-        .navbar .navbar-brand{
-          color:#fff;
-        }
-
-        .navbar .navbar-brand:hover {
-          color: #9462a9;
-        }
-
-        .navbar_icon{
-          display: flex;
-          flex-direction: row;
-        }
-
-        .d-flex a{
-          color: #fff;
-          margin: 10px;
-        }
-
-        .d-flex a:hover{
-          color:#9462a9;
-        }
-    img{
-        margin: 10px;
-        height: 30px;
-        width: 30px;
-        border-radius:45%;
-    }
-    .col-md-7{
-        background-color: rgba(245, 244, 240, 0.5);
-        padding: 30px;
-    }
-    .card{
-        background-color: rgba(245, 244, 240, 0.5);
-        padding: 10px;
-        margin: 10px;
-    }
-    body{
-        background-attachment: fixed;
-        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-      }
-      .po{
-        overflow:hidden
-      }
-
-    </style>
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
   </head>
+
   <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
-          <form class="d-flex">
-              <div class="navbar_icon">
-                      
-                  <div><a href=""><i class="fas fa-user fa-lg"></i></a></div>
-                  <div><a href=""><i class="fad fa-comments fa-lg"></i></a></div>
-                  <div><a href=""><i class="fas fa-search fa-lg"></i></a></div>
-              
+        <form class="d-flex">
+          <div class="navbar_icon">
+
+            <div><a href=""><i class="fas fa-user fa-lg"></i></a></div>
+            <div><a href=""><i class="fad fa-comments fa-lg"></i></a></div>
+            <div><a href=""><i class="fas fa-search fa-lg"></i></a></div>
+
           </div>
-          </form>
-        </div>
+        </form>
+      </div>
       </div>
     </nav>
 
-      <!-- 留言區 -->
-      
-      <div class="vh-100 d-flex justify-content-center align-items-center">
+    <!-- 留言區 -->
+
+    <div class="vh-100 d-flex justify-content-center align-items-center">
         <div class="review card p-3">
-            <form action="#" method="#">
-            <h2 class="text-center">Write a Review</h2>
-
-            <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput"  name="title">
-            <label for="floatingInput">Title</label>
-            </div>
-
-
-            <div class="">  
-            <div class="form-floating mb-3">
-            <input class="form-control "  id="floatingmessage" name="reviews" height="100px"></input>
-            <label for="floatingmessage">Review</label>
-            </div>
-          </div> 
-           
-            <div class="d-grid justify-content-center">
-                <button class="btn btn-secondary" type="submit">Submit</button>
-            </div>
-            </form>
-         
-        </div>
-      </div>  
-      <div class="container vh-100">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-7 col-lg-7 col-10 Po">
-
-
-                    <div class="card">
-                      <div>
-                        <h2 class="h3">
-                          <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t31.18172-8/1614293_973299279403678_2274578205457950467_o.jpg?stp=dst-jpg_s600x600&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=--lvAIpJVL8AX855LHG&_nc_ht=scontent-tpe1-1.xx&oh=00_AT_WiUSEH6QbgqDoPGSMUCsGMz4ef0d6EUXd_rQ1E_Z7yw&oe=6247F70B" alt="">
-                          名稱</h2>
-                        <div class="word">內文Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos quis asperiores. Dolores reprehenderit placeat suscipit voluptates aperiam praesentium tempore veniam tempora, laborum in! Nostrum cupiditate eaque fugiat temporibus facilis?</div>
-                      </div>
-                      <div class="d-flex justify-content-end">
-                        <a href="*"><i class="fas fa-edit"style="width: 25px;"></i></a>&nbsp;&nbsp;
-                        <a href="*"><i class="fas fa-eraser"style="width: 25px;"></i></a>
-                      </div>
+            <form >
+                <h2 class="text-center">Write a Review</h2>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control title-input" id="floatingInput" name="title">
+                    <label for="floatingInput">Title</label>
+                </div>
+                <div class="">
+                    <div class="form-floating mb-3">
+                        <input class="form-control review-input" id="floatingmessage" name="review" height="100px"></input>
+                        <label for="floatingmessage">Review</label>
                     </div>
-            </div>
-            <div class="col"></div>
+                </div>
+                <div class="d-grid justify-content-center">
+                    <button class="btn btn-secondary form-submit" type="submit">Submit</button>
+                </div>
+            </form>
         </div>
-      </div>
+    </div>
+    <div class="container vh-100">
+        <div class="row">
+            <div class="col-mg-2 col-lg-2"></div>
+            <div class="col-md-8 col-lg-8 col-12 Po card-wrapper">
+            </div>
+            <!-- <div class="col"></div> -->
+        </div>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
   </body>
 </html>
