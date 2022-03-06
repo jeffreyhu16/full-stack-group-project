@@ -31,8 +31,6 @@ MongoClient.connect(connectionString, (err, client) => {
         commentsCollection.insertOne(req.body)
             .then(result => console.log(result))
             .catch(err => console.log(err));
-        // res.send(req.body);
-        // console.log(req.body);
     }); 
 
     app.delete('/comment', (req, res) => {
