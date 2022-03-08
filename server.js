@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const dotenv = require('dotenv').config();
 
 app.use(express.json());
 app.use(cors());
@@ -12,9 +13,8 @@ app.use((req, res, next) => {
 });
 
 const MongoClient = require('mongodb').MongoClient;
-const connectionString = 'mongodb+srv://admin:gosoappasser20@cluster0.o3bew.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
-MongoClient.connect(connectionString, (err, client) => {
+MongoClient.connect(process.env.MONGO_URI, (err, client) => {
     if (err) { console.log(err) }
     console.log('connected to mongo');
     const db = client.db('full-stack-group-project');
